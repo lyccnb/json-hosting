@@ -1,0 +1,79 @@
+{
+    "items": [
+        {
+            "alias": "entity",
+            "value": "实体类",
+            "children": [
+                {"alias": "entity_recognition", "value": "实体识别类", "hint": "对实体本身进行有明确的识别目标的提问"},
+                {"alias": "entity_counting", "value": "实体计数类", "hint": "对实体的数量进行提问"},
+                {"alias": "entity_attribute", "value": "实体属性类", "hint": "对实体的属性（形状、颜色、材质）等等进行提问"},
+                {"alias": "entity_status", "value": "实体状态类", "hint": "对人体姿势/物体状态/物体状态变化等等进行提问"},
+                {"alias": "entity_3d_space", "value": "实体3D空间类", "hint": "对实体的3D空间的位置进行提问"},
+                {"alias": "entity_2d_space", "value": "实体2D空间类", "hint": "对实体的2D空间位置（画面中的位置）进行提问"},
+                {"alias": "entity_conditional_counting", "value": "实体条件计数类", "hint": "对存在的实体的数量进行有条件地（属性或方位等）提问"}
+            ]
+        },
+        {
+            "alias": "event",
+            "value": "事件类",
+            "children": [
+                {"alias": "event_recognition", "value": "事件识别类", "hint": "对事件本身进行有明确的识别目标的提问"},
+                {"alias": "event_counting", "value": "事件计数类", "hint": "对事件发生的次数进行提问"},
+                {"alias": "event_entity_attribute", "value": "事件属性类", "hint": "在事件识别的基础上进行实体属性的提问"},
+                {"alias": "event_sorting", "value": "事件排序类", "hint": "对事件发生的顺序进行提问"},
+                {"alias": "event_scene_perception", "value": "场景感知类", "hint": "对事件所处场景进行提问"}
+            ]
+        },
+        {
+            "alias": "cognitive",
+            "value": "认知类",
+            "children": [
+                {"alias": "cognitive_event", "value": "事件认知类", "hint": "对事件本身进行较复杂，需要理解的提问"},
+                {"alias": "cognitive_event_counting", "value": "事件认知计数类", "hint": "在事件认知的基础上，提出需要计数的问题"},
+                {"alias": "cognitive_event_computation", "value": "事件认知计算类", "hint": "在事件认知的基础上，提出需要计算的问题"},
+                {"alias": "cognitive_entity", "value": "实体认知类", "hint": "对实体进行相对复杂，考验模型理解能力的提问"},
+                {"alias": "cognitive_emotional_reasoning", "value": "情感推理类", "hint": "对人物的产生某种情感的原因进行提问"},
+                {"alias": "cognitive_intention_reasoning", "value": "意图推理类", "hint": "对人物做某种事情的意图进行提问"},
+                {"alias": "cognitive_causal_reasoning", "value": "因果推理类", "hint": "对事件的因果关系进行提问"},
+                {"alias": "cognitive_text_reasoning", "value": "文字推理类", "hint": "对文字中可能存在的推理内容进行提问"},
+                {"alias": "cognitive_character_relationship", "value": "人物关系类", "hint": "对人物关系进行提问"}
+            ]
+        },
+        {
+            "alias": "summary",
+            "value": "总结类",
+            "children": [
+                {"alias": "summary_representative_interval", "value": "代表区间类", "hint": "对某个事件甚至整个视频的代表区间的提问"}
+            ]
+        },
+        {
+            "alias": "text",
+            "value": "文字类",
+            "children": [
+                {"alias": "text_recognition", "value": "文字识别类", "hint": "对画面中的文字内容进行提问"},
+                {"alias": "text_counting", "value": "文字计数类", "hint": "对画面中的文字某方面的数量进行提问"},
+                {"alias": "text_space", "value": "文字空间类", "hint": "对画面中文字结合在某个空间方位的条件下进行提问"}
+            ]
+        },
+        {
+            "alias": "illusion",
+            "value": "幻觉类",
+            "children": [
+                {"alias": "illusion_entity", "value": "实体幻觉类", "hint": "基于实体制造单个虚假答案，让模型产生幻觉"},
+                {"alias": "illusion_event", "value": "事件幻觉类", "hint": "基于事件制造单个虚假答案，让模型产生幻觉"}
+            ]
+        },
+        {
+            "alias": "time",
+            "value": "时间类",
+            "children": [
+                {"alias": "time_interval_location", "value": "区间定位类", "hint": "对事件发生的时间区间的提问"},
+                {"alias": "time_point_location", "value": "时间点定位类", "hint": "对事件的发生的时间点或转折点的提问"},
+                {"alias": "time_interval_time", "value": "间隔时间类", "hint": "对两个时间的间隔时间的提问"},
+                {"alias": "time_duration", "value": "持续时间类", "hint": "对事件的持续时间的提问"},
+                {"alias": "time_interval_based_questions", "value": "基于区间提问类", "hint": "测试模型对于时间文本的理解"},
+                {"alias": "time_point_based_questions", "value": "基于时间点提问类", "hint": "测试模型对于时间文本的理解"}
+            ]
+        }
+    ]
+}
