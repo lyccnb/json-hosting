@@ -1,78 +1,211 @@
 {
     "items": [
         {
-            "alias": "entity",
-            "value": "实体类",
+            "alias": "perception",
+            "value": "感知",
             "children": [
-                {"alias": "entity_recognition", "value": "实体识别类", "hint": "对实体本身进行有明确的识别目标的提问"},
-                {"alias": "entity_counting", "value": "实体计数类", "hint": "对实体的数量进行提问"},
-                {"alias": "entity_attribute", "value": "实体属性类", "hint": "对实体的属性（形状、颜色、材质）等等进行提问"},
-                {"alias": "entity_status", "value": "实体状态类", "hint": "对人体姿势/物体状态/物体状态变化等等进行提问"},
-                {"alias": "entity_3d_space", "value": "实体3D空间类", "hint": "对实体的3D空间的位置进行提问"},
-                {"alias": "entity_2d_space", "value": "实体2D空间类", "hint": "对实体的2D空间位置（画面中的位置）进行提问"},
-                {"alias": "entity_conditional_counting", "value": "实体条件计数类", "hint": "对存在的实体的数量进行有条件地（属性或方位等）提问"}
+                {
+                    "alias": "perception_entity",
+                    "value": "实体感知",
+                    "children": [
+                        {
+                            "alias": "perception_entity_recognition",
+                            "value": "实体识别类",
+                            "hint": "对实体进行提问"
+                        },
+                        {
+                            "alias": "perception_entity_counting",
+                            "value": "实体计数类",
+                            "hint": "对实体的数量进行提问"
+                        },
+                        {
+                            "alias": "perception_entity_attribute",
+                            "value": "实体属性类",
+                            "hint": "对实体的属性（形状、颜色、材质）等等进行提问"
+                        },
+                        {
+                            "alias": "perception_entity_status",
+                            "value": "实体状态类",
+                            "hint": "对物体自身的状态进行提问/对物体自身的状态变化进行提问"
+                        }
+                    ]
+                },
+                {
+                    "alias": "perception_event",
+                    "value": "事件感知",
+                    "children": [
+                        {
+                            "alias": "perception_event_recognition",
+                            "value": "事件识别类",
+                            "hint": "对事件进行提问"
+                        },
+                        {
+                            "alias": "perception_event_counting",
+                            "value": "事件计数类",
+                            "hint": "对事件发生的次数进行提问"
+                        }
+                    ]
+                },
+                {
+                    "alias": "perception_scene",
+                    "value": "场景感知",
+                    "children": [
+                        {
+                            "alias": "perception_scene_recognition",
+                            "value": "场景识别类",
+                            "hint": "对事件所在的场景进行提问"
+                        }
+                    ]
+                },
+                {
+                    "alias": "perception_text",
+                    "value": "文字感知",
+                    "children": [
+                        {
+                            "alias": "perception_text_recognition",
+                            "value": "文字识别类",
+                            "hint": "对文字内容进行提问"
+                        },
+                        {
+                            "alias": "perception_text_counting",
+                            "value": "文字计数类",
+                            "hint": "对文字某方面的数量进行提问"
+                        }
+                    ]
+                },
+                {
+                    "alias": "perception_time",
+                    "value": "时间感知",
+                    "children": [
+                        {
+                            "alias": "perception_time_positioning",
+                            "value": "时间定位类",
+                            "hint": "对事件发生的时间区间的提问/对事件发生的时间点的提问"
+                        },
+                        {
+                            "alias": "perception_time_interval",
+                            "value": "间隔时间类",
+                            "hint": "对两个事件的间隔时间的提问"
+                        },
+                        {
+                            "alias": "perception_time_duration",
+                            "value": "持续时间类",
+                            "hint": "对事件的持续时间的提问"
+                        },
+                        {
+                            "alias": "perception_time_time_based_questions",
+                            "value": "基于时间提问类",
+                            "hint": ""
+                        }
+                    ]
+                }
             ]
         },
         {
-            "alias": "event",
-            "value": "事件类",
+            "alias": "cognition",
+            "value": "认知",
             "children": [
-                {"alias": "event_recognition", "value": "事件识别类", "hint": "对事件本身进行有明确的识别目标的提问"},
-                {"alias": "event_counting", "value": "事件计数类", "hint": "对事件发生的次数进行提问"},
-                {"alias": "event_entity_attribute", "value": "事件属性类", "hint": "在事件识别的基础上进行实体属性的提问"},
-                {"alias": "event_sorting", "value": "事件排序类", "hint": "对事件发生的顺序进行提问"},
-                {"alias": "event_scene_perception", "value": "场景感知类", "hint": "对事件所处场景进行提问"}
-            ]
-        },
-        {
-            "alias": "cognitive",
-            "value": "认知类",
-            "children": [
-                {"alias": "cognitive_event", "value": "事件认知类", "hint": "对事件本身进行较复杂，需要理解的提问"},
-                {"alias": "cognitive_event_counting", "value": "事件认知计数类", "hint": "在事件认知的基础上，提出需要计数的问题"},
-                {"alias": "cognitive_event_computation", "value": "事件认知计算类", "hint": "在事件认知的基础上，提出需要计算的问题"},
-                {"alias": "cognitive_entity", "value": "实体认知类", "hint": "对实体进行相对复杂，考验模型理解能力的提问"},
-                {"alias": "cognitive_emotional_reasoning", "value": "情感推理类", "hint": "对人物的产生某种情感的原因进行提问"},
-                {"alias": "cognitive_intention_reasoning", "value": "意图推理类", "hint": "对人物做某种事情的意图进行提问"},
-                {"alias": "cognitive_causal_reasoning", "value": "因果推理类", "hint": "对事件的因果关系进行提问"},
-                {"alias": "cognitive_text_reasoning", "value": "文字推理类", "hint": "对文字中可能存在的推理内容进行提问"},
-                {"alias": "cognitive_character_relationship", "value": "人物关系类", "hint": "对人物关系进行提问"}
-            ]
-        },
-        {
-            "alias": "summary",
-            "value": "总结类",
-            "children": [
-                {"alias": "summary_representative_interval", "value": "代表区间类", "hint": "对某个事件甚至整个视频的代表区间的提问"}
-            ]
-        },
-        {
-            "alias": "text",
-            "value": "文字类",
-            "children": [
-                {"alias": "text_recognition", "value": "文字识别类", "hint": "对画面中的文字内容进行提问"},
-                {"alias": "text_counting", "value": "文字计数类", "hint": "对画面中的文字某方面的数量进行提问"},
-                {"alias": "text_space", "value": "文字空间类", "hint": "对画面中文字结合在某个空间方位的条件下进行提问"}
-            ]
-        },
-        {
-            "alias": "illusion",
-            "value": "幻觉类",
-            "children": [
-                {"alias": "illusion_entity", "value": "实体幻觉类", "hint": "基于实体制造单个虚假答案，让模型产生幻觉"},
-                {"alias": "illusion_event", "value": "事件幻觉类", "hint": "基于事件制造单个虚假答案，让模型产生幻觉"}
-            ]
-        },
-        {
-            "alias": "time",
-            "value": "时间类",
-            "children": [
-                {"alias": "time_interval_location", "value": "区间定位类", "hint": "对事件发生的时间区间的提问"},
-                {"alias": "time_point_location", "value": "时间点定位类", "hint": "对事件的发生的时间点或转折点的提问"},
-                {"alias": "time_interval_time", "value": "间隔时间类", "hint": "对两个时间的间隔时间的提问"},
-                {"alias": "time_duration", "value": "持续时间类", "hint": "对事件的持续时间的提问"},
-                {"alias": "time_interval_based_questions", "value": "基于区间提问类", "hint": "测试模型对于时间文本的理解"},
-                {"alias": "time_point_based_questions", "value": "基于时间点提问类", "hint": "测试模型对于时间文本的理解"}
+                {
+                    "alias": "cognition_entity",
+                    "value": "实体认知",
+                    "children": [
+                        {
+                            "alias": "cognition_entity_identity_inference",
+                            "value": "人物身份推理类",
+                            "hint": "对人物身份进行提问"
+                        },
+                        {
+                            "alias": "cognition_entity_relationship_inference",
+                            "value": "人物关系推理类",
+                            "hint": "对人物关系进行提问"
+                        },
+                        {
+                            "alias": "cognition_entity_emotion_inference",
+                            "value": "人物情感推理类",
+                            "hint": "对人物情感进行提问"
+                        },
+                        {
+                            "alias": "cognition_entity_intention_inference",
+                            "value": "人物意图推理类",
+                            "hint": "对人物意图进行提问"
+                        },
+                        {
+                            "alias": "cognition_entity_positional_relationship",
+                            "value": "实体位置关系类",
+                            "hint": "对实体的位置关系进行相关提问"
+                        }
+                        ,
+                        {
+                            "alias": "cognition_entity_universal_relationship",
+                            "value": "实体一般关系类",
+                            "hint": "除人物关系、实体位置关系之外的人 - 物关系，物 - 物关系进行提问"
+                        }
+                    ]
+                },
+                {
+                    "alias": "cognition_event",
+                    "value": "事件认知",
+                    "children": [
+                        {
+                            "alias": "cognition_event_cognition",
+                            "value": "事件认知类",
+                            "hint": "对事件进行需要结合外部知识的提问"
+                        },
+                        {
+                            "alias": "cognition_event_temporal_relationship",
+                            "value": "事件时间关系类",
+                            "hint": "对事件发生的时间顺序进行相关提问"
+                        },
+                        {
+                            "alias": "cognition_event_causal_inference",
+                            "value": "因果推理类",
+                            "hint": "对事件的因果关系进行提问"
+                        }
+                    ]
+                },
+                {
+                    "alias": "cognition_scene",
+                    "value": "场景认知",
+                    "children": [
+                        {
+                            "alias": "cognition_scene_temporal_relationship",
+                            "value": "场景时间关系类",
+                            "hint": "对场景的时间关系进行提问"
+                        }
+                    ]
+                },
+                {
+                    "alias": "cognition_text",
+                    "value": "文字认知",
+                    "children": [
+                        {
+                            "alias": "cognition_text_inference",
+                            "value": "文字推理类",
+                            "hint": "对文字中可能存在的推理内容进行提问"
+                        },
+                        {
+                            "alias": "cognition_text_positional_relationship",
+                            "value": "文字位置关系类",
+                            "hint": "对文字的位置的问题进行相关提问"
+                        }
+                    ]
+                },
+                {
+                    "alias": "cognition_illusion",
+                    "value": "幻觉认知",
+                    "children": [
+                        {
+                            "alias": "cognition_illusion_entity",
+                            "value": "实体幻觉类",
+                            "hint": "基于实体制造单个虚假答案，让模型产生幻觉，即正确答案是视频中不存在的"
+                        },
+                        {
+                            "alias": "cognition_illusion_event",
+                            "value": "事件幻觉类",
+                            "hint": "基于事件制造单个虚假答案，让模型产生幻觉，即正确答案是视频中不存在的"
+                        }
+                    ]
+                }
             ]
         }
     ]
