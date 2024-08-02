@@ -83,19 +83,25 @@
                             "hint": "对事件发生的时间区间的提问/对事件发生的时间点的提问"
                         },
                         {
-                            "alias": "perception_time_interval",
-                            "value": "间隔时间类",
-                            "hint": "对两个事件的间隔时间的提问"
-                        },
-                        {
-                            "alias": "perception_time_duration",
-                            "value": "持续时间类",
-                            "hint": "对事件的持续时间的提问"
-                        },
-                        {
                             "alias": "perception_time_time_based_questions",
                             "value": "基于时间提问类",
                             "hint": ""
+                        },
+                        {
+                            "alias": "perception_time_timespace_based_questions",
+                            "value": "基于时空提问类",
+                            "hint": ""
+                        }
+                    ]
+                },
+                {
+                    "alias": "perception_2D_space",
+                    "value": "2D空间感知",
+                    "children": [
+                        {
+                            "alias": "perception_2D_space_2D",
+                            "value": "实体2D空间类",
+                            "hint": "对实体进行有关2D空间（画面）的提问"
                         }
                     ]
                 }
@@ -149,7 +155,7 @@
                         {
                             "alias": "cognition_event_cognition",
                             "value": "事件认知类",
-                            "hint": "对事件进行需要结合外部知识的提问"
+                            "hint": "对事件进行需要结合“专家”知识的提问"
                         },
                         {
                             "alias": "cognition_event_temporal_relationship",
@@ -170,7 +176,7 @@
                         {
                             "alias": "cognition_scene_temporal_relationship",
                             "value": "场景时间关系类",
-                            "hint": "对场景的时间关系进行提问"
+                            "hint": "对场景出现的顺序进行相关提问"
                         }
                     ]
                 },
@@ -191,18 +197,35 @@
                     ]
                 },
                 {
-                    "alias": "cognition_illusion",
-                    "value": "幻觉认知",
+                    "alias": "cognition_time",
+                    "value": "时间认知",
                     "children": [
                         {
-                            "alias": "cognition_illusion_entity",
-                            "value": "实体幻觉类",
-                            "hint": "基于实体制造单个虚假答案，让模型产生幻觉，即正确答案是视频中不存在的"
+                            "alias": "perception_time_interval",
+                            "value": "间隔时间类",
+                            "hint": "对两个事件的间隔时间的提问"
                         },
                         {
-                            "alias": "cognition_illusion_event",
-                            "value": "事件幻觉类",
-                            "hint": "基于事件制造单个虚假答案，让模型产生幻觉，即正确答案是视频中不存在的"
+                            "alias": "perception_time_duration",
+                            "value": "持续时间类",
+                            "hint": "对事件的持续时间的提问"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "alias": "illusion",
+            "value": "幻觉",
+            "children": [
+                {
+                    "alias": "illusion_illusion",
+                    "value": "幻觉",
+                    "children": [
+                        {
+                            "alias": "illusion_illusion_illusion",
+                            "value": "幻觉类",
+                            "hint": "混合以上所有类型的陈述，但保证其中有错误的答案，使模型产生幻觉"
                         }
                     ]
                 }
