@@ -10,22 +10,22 @@
                     "children": [
                         {
                             "alias": "perception_entity_recognition",
-                            "value": "实体识别类",
+                            "value": "实体识别",
                             "hint": "对实体进行提问"
                         },
                         {
                             "alias": "perception_entity_counting",
-                            "value": "实体计数类",
+                            "value": "实体计数",
                             "hint": "对实体的数量进行提问"
                         },
                         {
                             "alias": "perception_entity_attribute",
-                            "value": "实体属性类",
+                            "value": "实体属性",
                             "hint": "对实体的属性（形状、颜色、材质）等等进行提问"
                         },
                         {
                             "alias": "perception_entity_status",
-                            "value": "实体状态类",
+                            "value": "实体状态",
                             "hint": "对物体自身的状态进行提问/对物体自身的状态变化进行提问"
                         }
                     ]
@@ -36,12 +36,12 @@
                     "children": [
                         {
                             "alias": "perception_event_recognition",
-                            "value": "事件识别类",
+                            "value": "事件识别",
                             "hint": "对事件进行提问"
                         },
                         {
                             "alias": "perception_event_counting",
-                            "value": "事件计数类",
+                            "value": "事件计数",
                             "hint": "对事件发生的次数进行提问"
                         }
                     ]
@@ -52,7 +52,7 @@
                     "children": [
                         {
                             "alias": "perception_scene_recognition",
-                            "value": "场景识别类",
+                            "value": "场景识别",
                             "hint": "对事件所在的场景进行提问"
                         }
                     ]
@@ -63,12 +63,12 @@
                     "children": [
                         {
                             "alias": "perception_text_recognition",
-                            "value": "文字识别类",
+                            "value": "文字识别",
                             "hint": "对文字内容进行提问"
                         },
                         {
                             "alias": "perception_text_counting",
-                            "value": "文字计数类",
+                            "value": "文字计数",
                             "hint": "对文字某方面的数量进行提问"
                         }
                     ]
@@ -79,17 +79,17 @@
                     "children": [
                         {
                             "alias": "perception_time_positioning",
-                            "value": "时间定位类",
+                            "value": "时间定位",
                             "hint": "对事件发生的时间区间的提问/对事件发生的时间点的提问"
                         },
                         {
                             "alias": "perception_time_time_based_questions",
-                            "value": "基于时间提问类",
+                            "value": "基于时间提问",
                             "hint": ""
                         },
                         {
                             "alias": "perception_time_timespace_based_questions",
-                            "value": "基于时空提问类",
+                            "value": "基于时空提问",
                             "hint": ""
                         }
                     ]
@@ -100,7 +100,7 @@
                     "children": [
                         {
                             "alias": "perception_2D_space_2D",
-                            "value": "实体2D空间类",
+                            "value": "实体2D空间",
                             "hint": "对实体进行有关2D空间（画面）的提问"
                         }
                     ]
@@ -117,33 +117,33 @@
                     "children": [
                         {
                             "alias": "cognition_entity_identity_inference",
-                            "value": "人物身份推理类",
+                            "value": "人物身份推理",
                             "hint": "对人物身份进行提问"
                         },
                         {
                             "alias": "cognition_entity_relationship_inference",
-                            "value": "人物关系推理类",
+                            "value": "人物关系推理",
                             "hint": "对人物关系进行提问"
                         },
                         {
                             "alias": "cognition_entity_emotion_inference",
-                            "value": "人物情感推理类",
+                            "value": "人物情感推理",
                             "hint": "对人物情感进行提问"
                         },
                         {
                             "alias": "cognition_entity_intention_inference",
-                            "value": "人物意图推理类",
+                            "value": "人物意图推理",
                             "hint": "对人物意图进行提问"
                         },
                         {
                             "alias": "cognition_entity_positional_relationship",
-                            "value": "实体位置关系类",
+                            "value": "实体位置关系",
                             "hint": "对实体的位置关系进行相关提问"
                         }
                         ,
                         {
                             "alias": "cognition_entity_universal_relationship",
-                            "value": "实体一般关系类",
+                            "value": "实体一般关系",
                             "hint": "除人物关系、实体位置关系之外的人 - 物关系，物 - 物关系进行提问"
                         }
                     ]
@@ -154,17 +154,17 @@
                     "children": [
                         {
                             "alias": "cognition_event_cognition",
-                            "value": "事件认知类",
+                            "value": "事件认知",
                             "hint": "对事件进行需要结合“专家”知识的提问"
                         },
                         {
                             "alias": "cognition_event_temporal_relationship",
-                            "value": "事件时间关系类",
+                            "value": "事件时间关系",
                             "hint": "对事件发生的时间顺序进行相关提问"
                         },
                         {
                             "alias": "cognition_event_causal_inference",
-                            "value": "因果推理类",
+                            "value": "因果推理",
                             "hint": "对事件的因果关系进行提问"
                         }
                     ]
@@ -175,7 +175,7 @@
                     "children": [
                         {
                             "alias": "cognition_scene_temporal_relationship",
-                            "value": "场景时间关系类",
+                            "value": "场景时间关系",
                             "hint": "对场景出现的顺序进行相关提问"
                         }
                     ]
@@ -186,12 +186,12 @@
                     "children": [
                         {
                             "alias": "cognition_text_inference",
-                            "value": "文字推理类",
+                            "value": "文字推理",
                             "hint": "对文字中可能存在的推理内容进行提问"
                         },
                         {
                             "alias": "cognition_text_positional_relationship",
-                            "value": "文字位置关系类",
+                            "value": "文字位置关系",
                             "hint": "对文字的位置的问题进行相关提问"
                         }
                     ]
@@ -202,12 +202,12 @@
                     "children": [
                         {
                             "alias": "perception_time_interval",
-                            "value": "间隔时间类",
+                            "value": "间隔时间",
                             "hint": "对两个事件的间隔时间的提问"
                         },
                         {
                             "alias": "perception_time_duration",
-                            "value": "持续时间类",
+                            "value": "持续时间",
                             "hint": "对事件的持续时间的提问"
                         }
                     ]
